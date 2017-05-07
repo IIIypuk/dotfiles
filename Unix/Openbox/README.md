@@ -4,8 +4,6 @@ Copy all files to `~/.config/openbox`.
 **Key bindings**  
 `Win+Alt+Left` - Go to next desktop.  
 `Win+Alt+Right` - Go to prev desktop.  
-`Alt+ScrollUp` - Go to next desktop.  
-`Alt+ScrollDown` - Go to prev desktop.  
 `Win+Left` - Send window to next desktop.  
 `Win+Right` - Send window to prev desktop.  
 `Win+Ctrl+C` - Show & Hide all windows on all desktops.  

@@ -6,7 +6,7 @@
   </resistance>
   <focus>
     <focusNew>yes</focusNew>
-    <followMouse>yes</followMouse>
+    <followMouse>no</followMouse>
     <focusLast>yes</focusLast>
     <underMouse>no</underMouse>
     <focusDelay>200</focusDelay>
@@ -181,18 +181,8 @@
       <mousebind button="W-Left" action="Drag"> <!-- Move window -->
         <action name="Move"/>
       </mousebind>
-      <mousebind button="A-Right" action="Drag"> <!-- Resize window -->
+      <mousebind button="W-Right" action="Drag"> <!-- Resize window -->
         <action name="Resize"/>
-      </mousebind>
-      <mousebind button="A-Up" action="Click"> <!-- Switch to next desktop -->
-        <action name="GoToDesktop">
-          <to>previous</to>
-        </action>
-      </mousebind>
-      <mousebind button="A-Down" action="Click"> <!-- Switch to prev desktop -->
-        <action name="GoToDesktop">
-          <to>next</to>
-        </action>
       </mousebind>
     </context>
     <context name="Titlebar">
@@ -444,6 +434,12 @@
         <y>center</y>
       </position>
       <decor>no</decor>
+    </application>
+    <application name="tint2">
+      <position force="yes">
+        <x>center</x>
+        <y>0</y>
+      </position>
     </application>
   </applications>
 </openbox_config>
