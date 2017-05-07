@@ -6,7 +6,7 @@
   </resistance>
   <focus>
     <focusNew>yes</focusNew>
-    <followMouse>no</followMouse>
+    <followMouse>yes</followMouse>
     <focusLast>yes</focusLast>
     <underMouse>no</underMouse>
     <focusDelay>200</focusDelay>
@@ -100,52 +100,51 @@
   </dock>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
-
     <!-- Keybindings for dsesktop switching -->
-    <keybind key="C-A-Left"><!-- Switch to next desktop -->
+    <keybind key="W-A-Left"> <!-- Switch to next desktop -->
       <action name="GoToDesktop">
         <to>left</to>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="C-A-Right"><!-- Switch to prev desktop -->
+    <keybind key="W-A-Right"> <!-- Switch to prev desktop -->
       <action name="GoToDesktop">
         <to>right</to>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="W-A-Left"><!-- Send window to next desktop -->
+    <keybind key="W-Left"> <!-- Send window to next desktop -->
       <action name="SendToDesktop">
         <to>left</to>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="W-A-Right"><!-- Send window to prev desktop -->
+    <keybind key="W-Right"> <!-- Send window to prev desktop -->
       <action name="SendToDesktop">
         <to>right</to>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="W-c"><!-- Show&hide all windows on desktop -->
+    <keybind key="W-C-c"> <!-- Show&hide all windows on desktop -->
       <action name="ToggleShowDesktop"/>
     </keybind>
     <!-- Keybindings for windows -->
-    <keybind key="A-c">
+    <keybind key="W-c"> <!-- Close window -->
       <action name="Close"/>
     </keybind>
-    <keybind key="A-x">
+    <keybind key="W-x"> <!-- Toggle maximize window -->
       <action name="ToggleMaximize"/>
     </keybind>
-    <keybind key="A-z">
+    <keybind key="W-z"> <!-- Toggle iconify window -->
       <action name="Iconify"/>
     </keybind>
-    <keybind key="A-space">
+    <keybind key="A-space"> <!-- Show window menu -->
       <action name="ShowMenu">
         <menu>client-menu</menu>
       </action>
     </keybind>
-    <!-- Keybindings for window switching -->
-    <keybind key="A-Tab">
+    
+    <keybind key="A-Tab"> <!-- Keybindings for window switching -->
       <action name="NextWindow">
         <finalactions>
           <action name="Focus"/>
@@ -154,8 +153,8 @@
         </finalactions>
       </action>
     </keybind>
-    <!-- Keybindings for running applications -->
-    <keybind key="W-t"><!-- Run terminal -->
+
+    <keybind key="W-t"> <!-- Run terminal -->
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -164,7 +163,7 @@
         <command>pantheon-terminal</command>
       </action>
     </keybind>
-    <keybind key="W-r"><!-- Run gmrun -->
+    <keybind key="W-r"> <!-- Run gmrun -->
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -177,7 +176,7 @@
   <mouse>
     <dragThreshold>1</dragThreshold>
     <doubleClickTime>500</doubleClickTime>
-    <screenEdgeWarpTime>400</screenEdgeWarpTime>
+    <screenEdgeWarpTime>0</screenEdgeWarpTime>
     <screenEdgeWarpMouse>false</screenEdgeWarpMouse>
     <context name="Frame">
       <mousebind button="A-Left" action="Press">
